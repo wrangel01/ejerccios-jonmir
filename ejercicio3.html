@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="español">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerciciopractica</title>
+  </head>
+  <body>
+
+
+    <h1>EJERICCIOS JAVA SCRIPT</h1>
+
+    <script>
+        function estoEsUnaFuncion(){
+            console.log("uno");
+            console.log("dos");
+            console.log("tres");
+        }
+
+        estoEsUnaFuncion()
+
+        function saludar(nombre ="walter", edad = 35){
+            console.log("Hola mi nombre es ${nombre} y tengo ${edad} años");
+
+        }
+        saludar()
+
+
+        function funcionDeclarada() {
+        console.log("Esto es una funcion declarada")
+        }
+        funcionDeclarada()
+
+        const funcionExpresada = function () {
+            console.log("Esto es una Funcion expresada, es decir una funcion que se le ha dado asigando como valor a una variable")
+        }
+
+        funcionExpresada();
+
+
+                                                          // arreglos clase #11
+
+
+        const a = [];
+        const b = [1, true,"Hola", ["A", "B", "C"]];
+        console.log(a);
+        console.log(b);
+
+        console.log(b[2]);
+        console.log(b[0]);
+        console.log(b[3][0]);
+
+        const c = Array.of("x","z", "y", "1", "2", "3");
+        console.log(c);
+
+        const d = Array(100).fill(true);
+        console.log(d);
+
+        const colores = ["azul","rojo","amarillo"];
+        console.log(colores);
+
+        colores.push("negro");
+        console.log(colores);
+        
+        colores.pop()
+        console.log(colores);
+
+        colores.forEach(function(Element, index){ 
+        console.log(`<li id ="${index}"> ${Element} </li>`);
+        })
+
+
+                                                          // Objetos clase # 12
+
+
+     const x= {}
+     console.log(x)
+
+     const wal={
+        nombre:"walter",
+        apellido:"Rangel",
+        edad: "35",
+        hobbies:["correr", "hacer ejercicio", "estudiar","vertv"],
+        soltero:true,
+        contacto:{
+        email:"wrangel@gmail.com",
+        telefono: 3203004040,
+        movil:"@wrangelf",
+       },
+        saludar : function(){
+        console.log("Hola")
+      },
+      
+       decirMiNombre: function(){
+        console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me gusta ${this.hobbies[1]}`)
+      }
+
+     }
+
+     console.log(wal.apellido);
+     console.log(wal.hobbies[1]);
+     console.log(wal.contacto.email);
+     wal.saludar();
+     wal.decirMiNombre();
+     console.log(Object.keys(wal));
+     console.log(Object.values(wal));
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+  </body>
+  
+</html>
+
+
