@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>EJERICIOS JAVA</h1>
+
+    <script>
+
+        const numeros = [1,2,3,4,5,6,7,8,9,0];
+        for (let i = 0; i < numeros.length; i++) {
+        if(i === 5){
+        }
+         console.log(numeros[i]); 
+        }
+
+        for (let i = 0; i < numeros.length; i++) {
+        if(i === 5){
+            break;
+        }
+         console.log(numeros[i]); 
+        }
+
+        for (let i = 0; i < numeros.length; i++) {
+        if(i === 5){
+            continue;
+        }
+         console.log(numeros[i]); 
+        }
+
+
+        const categoria = [1, 2, 3];
+        let uno = categoria[0];
+            dos = categoria[1];
+            tres = categoria[2];
+
+            console.log(uno, dos, tres);
+
+        const [one, two, three] = categoria;
+        console.log(one, two, three);
+
+        let persona = {
+            nombre: "walter",
+            apellido:"Rangel",
+            edad : "35",
+        }
+
+        let{nombre, apellido,edad} = persona;
+        console.log(nombre, apellido,edad);
+    </script>
+    
+</body>
+</html>
